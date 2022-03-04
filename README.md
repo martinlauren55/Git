@@ -66,3 +66,29 @@ Instructions for working with Git
 **git fetch** - Принимает изменения с удаленного сервера но не сливает их, позволяет сравнить разницу в версиях</br>
 
 **git diff master..origin/dev** - Отобразятся изменения в ветке master **origin** - имя репозитория **dev** - имя ветки</br>
+
+**git pull** - Зальются все изменения с сервера в проект</br>
+
+**git push** - Загрузить изменения на сервер</br>
+
+**git push -u origin {name_branch}** - Загрузить изменения в конкретную ветку. **origin** - имя репозитория</br>
+
+**git checkout -b {new_brench}** - Создание новой ветки</br>
+
+**git branch -m {old_branch_name} {new_branch_name}** - Переименнование ветки</br>
+
+**git branch -l** - Список всех веток в проекте</br>
+
+**git branch -d {branch_to_delete}** - Удалить ветку по её названию (удаляет локально)</br>
+
+**git push --delete origin {branch_to_delete}** - Удалить ветку по её названию (удаляет c сервера) **origin** - имя репозитория **{branch_to_delete}** - имя репозитория для удаления</br>
+
+**git checkout {exist_brench}** - Переключение на другую ветку</br>
+
+**git remote** - Список всех удаленных серверов</br>
+
+**git remote -v** - Список адрессов удаленных серверов</br>
+
+## Слияние и разрешение конфликтов
+
+**git merge {name_branch}** - Слияние веток в одну (перейти на нужную ветку main и слить в нее изменения из dev)</br>
